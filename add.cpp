@@ -6,10 +6,10 @@ int main(){
     float a, b;
     int choice;
 
-    cout << "1.Add two numbers\n2.Multiply two numbers\n3.Exit" << endl;
+    cout << "1.Add two numbers\n2.Multiply two numbers\n3.Subtract two numbers\n4.Exit" << endl;
     cout << "Enter your choice: ";
     cin >> choice;
-    while(choice != 3){
+    while(choice != 4){
         cout << "Enter number 1: ";
         cin >> a;
         cout << "Enter number 2: ";
@@ -19,6 +19,9 @@ int main(){
         }
         else if(choice == 2){
             cout << "Result: " << a*b << endl; 
+        }
+        else if(choice == 3){
+            cout << "Result: " << a-b << endl; 
         }
         cout << "1.Add two numbers\n2.Multiply two numbers\n3.Exit" << endl;
         cout << "Enter your choice: ";
